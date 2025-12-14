@@ -1,0 +1,115 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: none;
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(circle at center, rgb(255, 187, 0) 20%, rgba(1, 255, 145, 0.863));
+    background-size: 400% 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: change 3s alternate infinite;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.box{
+    height: 400px;
+    width: 500px;
+    background: linear-gradient(to bottom, rgb(10, 10, 93) , black );
+    background-size:cover;
+    border-radius: 50px;
+    padding: 20px 40px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-style:Sans-Serif;
+    padding: 30px 40px 20px 40px;
+    size: 50px;
+}
+
+.detail{
+    color: white;
+    margin: 10px 0px;
+}
+
+label{
+    font-size: 20px;
+    padding: 10px;
+}
+
+input{
+     margin-top: 5px;
+     height: 35px;
+     width: 300px;
+     padding: 10px 15px;
+     font-size: 19px;
+     border-radius: 50px;
+     transition: all 0.1s linear;
+}
+
+input:hover {
+    transform: scaleY(1.1) scaleX(1.1);
+}
+
+.action{
+   display: flex;
+   justify-content: center;
+   padding-top: 10px;
+}
+
+button{
+    height: 40px;
+    width: 50%;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(32, 0, 242);
+    background-image: radial-gradient(circle at center, rgb(5, 1, 255), rgb(255, 9, 177));
+    animation: move-gradient 0.8s alternate infinite;
+    background-size: 300%  300%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(to bottom, rgb(5, 1, 255), rgb(255, 9, 177));
+    background-size: 100% 100%; 
+    transform: scale(1.2);
+    box-shadow: 0px 0px 50px 10px blue;
+}
+
+
+@keyframes move-gradient {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
